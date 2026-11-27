@@ -1,0 +1,36 @@
+{
+  "name": "acode.plugin.version.control.gitpro",
+  "version": "2.10.1",
+  "description": "Plugin for Acode to provide Git SCM features",
+  "main": "dist/main.js",
+  "repository": "https://github.com/dikidjatar/acode-plugin-version-control-gitpro",
+  "author": "Diki Djatar",
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/language": "^6.12.3",
+    "@codemirror/merge": "^6.7.0",
+    "@codemirror/state": "^6.6.0",
+    "@codemirror/view": "^6.43.4",
+    "codemirror": "^6.0.2",
+    "diff": "5.1.0"
+  },
+  "devDependencies": {
+    "acode-plugin-types": "^1.12.4",
+    "esbuild": "^0.28.0",
+    "esbuild-sass-plugin": "^3.7.0",
+    "jszip": "^3.10.1",
+    "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "dev": "bun esbuild.config.mjs --serve",
+    "build": "bun ./node_modules/typescript/bin/tsc --noEmit && bun esbuild.config.mjs",
+    "clean": "bun scripts/clean.js"
+  },
+  "browserslist": [
+    "> 0.25%, not dead"
+  ],
+  "resolutions": {
+    "terser": ">=5.14.2 ",
+    "glob-parent": ">=5.1.2"
+  }
+}

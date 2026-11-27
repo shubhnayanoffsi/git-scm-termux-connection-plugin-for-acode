@@ -1,0 +1,7 @@
+node_modules/
+*.zip
+plugin/dist/main.js
+plugin/dist/main.css
+.DS_Store
+*.log
+*.pid
